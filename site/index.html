@@ -1,9 +1,96 @@
 <!DOCTYPE html>
 <html>
-<body>
-
-<h1>Evgenii learning terraform</h1>
-<p>Yeah, jorney begun</p>
-
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Countdown landing page Bootstrap template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png">
+  </head>
+  <body>
+    <section class="page-holder position-relative d-flex justify-content-between flex-column" style="background: url(img/beach.jpg)">
+      <div class="overlay"></div>
+      <div class="container position-relative z-index-20 pt-3">
+        <ul class="list-inline text-center">
+          <li class="list-inline-item"><a class="social-link social-link-facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="list-inline-item"><a class="social-link social-link-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a class="social-link social-link-instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="container text-center text-white position-relative mt-4 mb-5">
+        <h1 class="text-shadow mb-5 text-uppercase">Countdown template</h1>
+        <p class="h3 text-shadow text-uppercase">We are still tweaking few details, stay tuned!</p>
+        <div class="countdown mt-5" id="countdown">
+          <div class="row">
+            <div class="countdown-item col-md-3 col-sm-6">
+              <div class="countdown-number fw-light text-shadow" data-days>&nbsp;</div>
+              <p class="h4 fw-light text-shadow">days</p>
+            </div>
+            <div class="countdown-item col-md-3 col-sm-6">
+              <div class="countdown-number fw-light text-shadow" data-hours>&nbsp;</div>
+              <p class="h4 fw-light text-shadow">hours</p>
+            </div>
+            <div class="countdown-item col-md-3 col-sm-6">
+              <div class="countdown-number fw-light text-shadow" data-minutes>&nbsp;</div>
+              <p class="h4 fw-light text-shadow">minutes</p>
+            </div>
+            <div class="countdown-item col-md-3 col-sm-6">
+              <div class="countdown-number fw-light text-shadow" data-seconds>&nbsp;</div>
+              <p class="h4 fw-light text-shadow">seconds</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container text-white text-center z-index-20">
+        <p class="h3 mb-4 text-shadow fw-normal">Join our mailing list and we will let you know all the news!</p>
+        <div class="row">
+          <div class="col-lg-5 mx-auto">
+            <form class="d-flex d-inline-block w-100 flex-column flex-lg-row justify-content-center">
+              <div class="input-group">
+                <input class="form-control" id="inlineFormInputName2" type="email" placeholder="JaneDoe@example.com">
+                <button class="btn btn-primary" type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer class="py-4 w-100 text-sm text-white z-index-20 position-relative">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 text-center text-sm-start">
+              <p>&copy;2023 Evgenii Seliavka</p>
+            </div>
+            <div class="col-sm-6 text-center text-sm-end">Template by <a class="text-reset" href="https://bootstrapious.com">Bootstrapious </a>with support from <a class="text-reset" href="https://hikershq.com">HHQ</a></div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- JavaScript files-->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/timezz/timezz.js"></script>
+    <script src="js/theme.js"></script>
+    <script>
+      // You can set the final date from the following variable.
+      let deadline = 'Sep 22, 2023 00:00:00'
+      
+      // and now we init the countdown
+      document.addEventListener('DOMContentLoaded', function () {
+          countDown(deadline, '#countdown')
+      });
+      
+      
+      
+    </script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
 </html>

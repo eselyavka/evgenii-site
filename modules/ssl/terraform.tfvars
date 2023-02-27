@@ -1,1 +1,1 @@
-domain_names = ["seliavka.site"]
+domain_names = ["seliavka.site", "evgenii.seliavka.site"]
