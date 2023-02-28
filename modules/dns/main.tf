@@ -70,4 +70,13 @@ resource "godaddy_domain_record" "gd-evgenii-site" {
     type     = "CNAME"
     weight   = 0
   }
+  record {
+    data     = "PBK4hCh-6WFriT-fqZ5_nRLjwQKV35WqUx3zOBhe7hE"
+    name     = "google-site-verification"
+    port     = 0
+    priority = 0
+    ttl      = 3600
+    type     = "TXT"
+    weight   = 0
+  }
 }
