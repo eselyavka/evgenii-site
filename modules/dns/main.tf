@@ -53,26 +53,8 @@ resource "godaddy_domain_record" "gd-evgenii-site" {
     weight   = 0
   }
   record {
-    data     = "PBK4hCh-6WFriT-fqZ5_nRLjwQKV35WqUx3zOBhe7hE"
-    name     = "google-site-verification"
-    port     = 0
-    priority = 0
-    ttl      = 3600
-    type     = "TXT"
-    weight   = 0
-  }
-  record {
     data     = "_domainconnect.gd.domaincontrol.com"
     name     = "_domainconnect"
-    port     = 0
-    priority = 0
-    ttl      = 3600
-    type     = "CNAME"
-    weight   = 0
-  }
-  record {
-    data     = "gv-k5ekzz233fud3a.dv.googlehosted.com"
-    name     = "y4ehomeduqnr.evgenii"
     port     = 0
     priority = 0
     ttl      = 3600
