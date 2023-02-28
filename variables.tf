@@ -16,3 +16,7 @@ variable "zone" {
 variable "folder_path" {
   type = string
 }
+
+variable "domain_names" {
+  type = list(any)
+}
