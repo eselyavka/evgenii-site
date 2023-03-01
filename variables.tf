@@ -1,4 +1,4 @@
-## VARIABLES
+## VARS ##
 variable "project-id" {
   type = string
 }

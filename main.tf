@@ -6,6 +6,10 @@ terraform {
       version = "1.9.1"
     }
   }
+  backend "gcs" {
+    bucket = "3a132abe82efc66b-tf-state"
+    prefix = "terraform/state"
+  }
 }
 
 ## Modules and deps ##
